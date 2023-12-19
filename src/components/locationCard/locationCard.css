@@ -1,0 +1,6 @@
+.main-img {
+  height: 350px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-width: 200px;
+}

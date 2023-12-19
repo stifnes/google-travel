@@ -18,6 +18,10 @@ export const locationsReducer = (state: any, action: { type: any; payload: any }
       return {
         locations: state.locations.filter((l: { _id: any }) => l._id !== action.payload._id)
       }
+    case 'GET_ONE_LOCATION':
+      return {
+        singleLocation: action.payload
+      }
     default:
       return state
   }

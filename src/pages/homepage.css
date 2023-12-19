@@ -1,3 +1,15 @@
 .locations-grid {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .locations-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
 }
